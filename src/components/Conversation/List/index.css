@@ -11,7 +11,11 @@
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.conversation-item:hover {
+.conversation-item--active {
+  background-color: var(--primary-color);
+}
+
+.conversation-item:hover:not(.conversation-item--active) {
   background-color: var(--background-hover-color);
 }
 .conversation-item__image {

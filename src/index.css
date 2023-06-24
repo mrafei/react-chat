@@ -15,6 +15,7 @@
   -webkit-text-size-adjust: 100%;
 
   /* variables */
+  --primary-color: #8774e1;
   --background-hover-color: #2b2b2b;
   --background-primary: #242424;
   --conversation-container-max-width: 728px;

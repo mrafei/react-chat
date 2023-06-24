@@ -75,11 +75,12 @@ textarea {
   margin: 0;
   font-size: inherit;
   line-height: inherit;
+  border: none;
+  background-color: transparent;
 }
 
 textarea {
   resize: none;
-  border: none;
 }
 button {
   overflow: visible;
