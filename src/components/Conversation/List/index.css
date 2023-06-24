@@ -1,0 +1,30 @@
+.conversation-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+.conversation-item {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.conversation-item:hover {
+  background-color: var(--background-hover-color);
+}
+.conversation-item__image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.conversation-item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 0.5rem;
+}
