@@ -5,12 +5,21 @@
 
 .container {
   position: relative;
-  padding: 2rem;
   flex: 1;
+  background-image: url(/pattern.webp);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/pattern.webp);
+}
+.container__inner {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
+  max-width: var(--conversation-container-max-width);
 }

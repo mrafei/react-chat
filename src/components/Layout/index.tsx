@@ -8,8 +8,10 @@ const Layout: HOCFunctionalComponent = (props) => {
     <div className="layout">
       <Sidebar />
       <div className="container">
-        {children}
-        <ChatInput />
+        <div className="container__inner">
+          {children}
+          <ChatInput />
+        </div>
       </div>
     </div>
   );
