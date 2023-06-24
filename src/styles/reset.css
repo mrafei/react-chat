@@ -77,6 +77,10 @@ textarea {
   line-height: inherit;
 }
 
+textarea {
+  resize: none;
+  border: none;
+}
 button {
   overflow: visible;
 }
