@@ -18,7 +18,7 @@ const MessageItem: FC<IMessage> = (props) => {
   const avatar = props.avatar || profileImageUrl(sender?.uid);
   const showSenderInfo = participants.length > 2 && !isSelf;
   return (
-    <div className="message__container">
+    <div className={`message__container ${isSelf ? "message__container--self" : ""}`}>
       {showSenderInfo ? (
         <img className="message__avatar" src={avatar} alt={senderName} />
       ) : null}
