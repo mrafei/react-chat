@@ -104,3 +104,7 @@ button::-moz-focus-inner,
   padding: 0;
   border-style: none;
 }
+
+*:focus {
+  outline: none !important;
+}
