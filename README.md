@@ -12,7 +12,9 @@ Take a look at this project on my github: https://github.com/mrafei/react-chat
 4. in order to login you need to insert email and password. creating users is only available to admin on firebase console.
 
    I have created some users such as `m.rafei96@gmail.com`, `cindy@gmail.com` and `john@gmail.com`
-
+5. There shouldn't be any problem connecting to firebase api. In my case since the api is banned in Iran I had to use a proxy to make connection. 
+   
+   If you encountered any `CORS` errors in console you should use proxy as well.
 ## Models Schema
 I did not use [bunq api](https://assignment.bunq.com/), but I tried to implement a close model.
 
@@ -69,3 +71,8 @@ These are some of the ideas to implement, but I wanted the app to remain simple 
    In case of having a complete backend we should make api calls to backend and replace firebase kit altogether.
 <br></br>
 10. We can add more lint rules such as `airbnb`. For now only the default `.eslintrc.cjs` is set to allow future improvement.
+<br></br>
+11. These features should be implemented to allow true experience of a chat app:
+    - ability to sign up and confirm email
+    - ability to view a list of friends and adding friends by username
+    - ability to create discussions with friends or starting a group chat by adding multiple friends
