@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { getAuth, onAuthStateChanged, type User } from "firebase/auth";
+import { onAuthStateChanged, type User } from "firebase/auth";
+import { auth } from "@configs/firebase";
 const useAuth = () => {
-  const [user, setUser] = useState<Nullable<User>>(null);
+  const [user, setUser] = useState<Nullishable<User>>(undefined);
   useEffect(() => {
-    const auth = getAuth();
-
     const listener = onAuthStateChanged(auth, async (user) => {
       setUser(user);
     });
